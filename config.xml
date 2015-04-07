@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <!--
+    Copyright (c) 2013 by Shin.  All Rights Reserved.
+    -->
+
+    <!-- App version -->
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "vn/taigame.portal"
+        versionCode = "04"
+        version     = "1.0.0">
+
+    <!-- App info -->
+    <name>Mobile Game</name>
+
+    <description>
+        Tin tức về ứng dụng mobile hấp dẫn nhất.
+    </description>
+
+    <author href="http://www.taigame.vn" email="nguyenminhtri2710894@gmail.com">
+        Nguen Minh Tri
+    </author>
+
+    <!-- App platform -->
+    <gap:platform name="ios" />
+    <gap:platform name="android" />
+    <gap:platform name="webos" />
+    <gap:platform name="symbian" />
+    <gap:platform name="blackberry" />
+    <gap:platform name="winphone" />
+
+    <!-- App preferences -->
+    <preference name="phonegap-version" value="2.9.0" />
+
+        <!-- iOS -->
+        <preference name="orienation" value="portrait" />
+        <preference name="fullscreen" value="false" />
+        <preference name="target-device" value="universal" />
+        <preference name="prerendered-icon" value="true" />
+        <preference name="ios-statusbarstyle" value="black-opaque" />
+        <preference name="detect-data-types" value="false" />
+        <preference name="exit-on-suspend" value="false" />
+        <preference name="webviewbounce" value="false" />
+        <preference name="stay-in-webview" value="true" />
+        <preference name="show-splash-screen-spinner" value="false" />
+
+        <!-- Android -->
+        <preference name="android-minSdkVersion" value="10" />
+        <preference name="android-installLocation" value="auto" />
+        <preference name="android-windowSoftInputMode" value="stateVisible|adjustResize" />
+        <preference name="splash-screen-duration" value="2000"/>
+        <!--
+        <preference name="android-maxSdkVersion" value="15" />
+        <preference name="android-targetSdkVersion" value="12" />
+        -->
+
+        <!-- blackberry -->
+        <preference name="disable-cursor" value="false" />
+
+    <!-- Icons -->
+    <icon src="res/icon/ios/icon-57.png" />
+
+        <!-- iOS -->
+        <icon src="res/icon/ios/icon-57.png" gap:platform="ios" width="57" height="57" />
+        <icon src="res/icon/ios/icon-72.png" gap:platform="ios" width="72" height="72" />
+        <icon src="res/icon/ios/icon-57-2x.png" gap:platform="ios" width="114" height="114" />
+        <icon src="res/icon/ios/icon-72-2x.png" gap:platform="ios" width="144" height="144" />
+
+        <!-- Android -->
+        <icon src="res/icon/android/icon-36-ldpi.png" gap:platform="android" gap:density="ldpi" />
+        <icon src="res/icon/android/icon-48-mdpi.png" gap:platform="android" gap:density="mdpi" />
+        <icon src="res/icon/android/icon-72-hdpi.png" gap:platform="android" gap:density="hdpi" />
+        <icon src="res/icon/android/icon-96-xhdpi.png" gap:platform="android" gap:density="xhdpi" />
+
+        <!-- blackberry -->
+        <icon src="res/icon/blackberry/icon-80.png" gap:platform="blackberry" />
+        <icon src="res/icon/blackberry/icon-80-hover.png" gap:platform="blackberry" gap:state="hover"/>
+
+        <!-- Windows phone -->
+        <icon src="res/icon/windows-phone/icon-48.png" gap:platform="winphone" />
+        <icon src="res/icon/windows-phone/icon-173-tile.png" gap:platform="winphone" gap:role="background" />
+
+        <!-- WebOS -->
+        <icon src="res/icon/webos/icon-64.png" gap:platform="webos" />
+
+    <!-- Splash screens -->
+    <gap:splash src="res/screen/ios/screen-iphone-portrait-2x.png" />
+
+        <!-- iOS -->
+        <gap:splash src="res/screen/ios/screen-iphone-portrait.png" gap:platform="ios" width="320" height="480" />
+        <gap:splash src="res/screen/ios/screen-iphone-portrait-2x.png" gap:platform="ios" width="640" height="960" />
+        <gap:splash src="res/screen/ios/screen-iphone-portrait-568h-2x.png" gap:platform="ios" width="640" height="1136" />
+        <gap:splash src="res/screen/ios/screen-ipad-landscape.png" gap:platform="ios" width="1024" height="748" />
+        <gap:splash src="res/screen/ios/screen-ipad-portrait.png" gap:platform="ios" width="768" height="1004" />
+        <gap:splash src="res/screen/ios/screen-ipad-landscape-2x.png" gap:platform="ios" width="2048" height="1496" />
+        <gap:splash src="res/screen/ios/screen-ipad-portrait-2x.png" gap:platform="ios" width="1536" height="2008" />
+
+        <!-- Android -->
+        <gap:splash src="res/screen/android/screen-ldpi-portrait.png" gap:platform="android" gap:density="ldpi" />
+        <gap:splash src="res/screen/android/screen-mdpi-portrait.png" gap:platform="android" gap:density="mdpi" />
+        <gap:splash src="res/screen/android/screen-hdpi-portrait.png" gap:platform="android" gap:density="hdpi" />
+        <gap:splash src="res/screen/android/screen-xhdpi-portrait.png" gap:platform="android" gap:density="xhdpi" />
+
+        <!-- blackberry -->
+        <gap:splash src="res/screen/blackberry/splash-225.png" gap:platform="blackberry" />
+
+        <!-- Windows phone -->
+        <gap:splash src="res/screen/windows-phone/screen-portrait.jpg" gap:platform="winphone" />
+
+    <!-- Cross domain -->
+    <access origin="*" />
+
+    <!-- Features -->
+    <feature name="http://api.phonegap.com/1.0/network"/>
+    <feature name="http://api.phonegap.com/1.0/notification"/>
+    <!--
+    <feature name="http://api.phonegap.com/1.0/battery"/>
+    <feature name="http://api.phonegap.com/1.0/camera"/>
+    <feature name="http://api.phonegap.com/1.0/contacts"/>
+    <feature name="http://api.phonegap.com/1.0/file"/>
+    <feature name="http://api.phonegap.com/1.0/geolocation"/>
+    <feature name="http://api.phonegap.com/1.0/media"/>
+    -->
+
+    <!-- Plug-ins -->
+    <!--
+    <gap:plugin name="com.arnia.plugins.smsbuilder" />
+    -->
+</widget>

@@ -1,0 +1,24 @@
+.animated {
+  -webkit-transition: none;
+  -o-transition: color 0 ease-in;
+  transition: none;
+  -webkit-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 0;
+  -ms-animation-duration: 0;
+  -o-animation-duration: 0;
+  animation-duration: 0;
+  -webkit-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
+}
+
+#wrapper > .view {
+  -webkit-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
+}
