@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!--
+Copyright (c) 2013 by Shin.  All Rights Reserved.
+-->
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Tải Game Portal</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+
+        <link rel="stylesheet" href="css/import.css">
+
+        <script type="text/javascript" src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <div id="viewport">
+            <div id="overlay" class="">
+                <div id="overlay-body" class="">
+                    <h1>Hello!</h1>
+                </div>
+
+                <span href="javascript:;" class="close">&times;</span>
+
+                <div class="indicator spinner active center">Loading...</div>
+            </div>
+
+            <div id="wrapper" class="">
+                <div id="home" class="view nofooter">
+                    <div class="view-header flex">
+                        <a class="nav back info"><i class="icon-info"></i></a>
+                        <h1 class="spacer">Tải Game</h1>
+                        <a class="nav search-open"><i class="icon-search"></i></a>
+                    </div>
+
+                    <div class="view-body scroll safe" data-scroll-type="pull">
+                        <div class="content"></div>
+                    </div>
+
+                    <div class="view-footer flex"></div>
+                    <div class="indicator spinner active center">Loading...</div>
+                </div>
+
+                <div id="detail" class="view nofooter">
+                    <div class="view-header flex">
+                        <a class="nav back"><i class="icon-chevron-left"></i></a>
+                        <h1 class="spacer">Detail</h1>
+                        <a class="nav download"><i class="icon-download"></i></a>
+                    </div>
+
+                    <div class="view-body scroll safe" data-scroll-type="simple">
+                        <div class="content">
+
+                            <div class="photoviewer scroll" data-scroll-type="photo">
+                                <div class="wrapper">
+                                    <span class="holder flex">
+                                        <img src="img/noimage.png" />
+                                    </span>
+                                    <span class="holder flex">
+                                        <img src="img/noimage.png" />
+                                    </span>
+                                    <span class="holder flex">
+                                        <img src="img/noimage.png" />
+                                    </span>
+                                    <span class="holder flex">
+                                        <img src="img/noimage.png" />
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="view-footer flex"></div>
+                    <div class="indicator spinner active center">Loading...</div>
+                </div>
+
+                <div id="search" class="view nofooter">
+                    <div class="view-header flex">
+                        <form class="search-form spacer" action="#search" method="post">
+                            <input type="search" class="search-input" placeholder="Nhập từ khoá" />
+                            <button class="search-submit" type="submit" ><i class="icon-search"></i></<button>
+                            <button class="search-clear" type="reset" ><i class="icon-remove-sign"></i></button>
+                        </form>
+                        <a class="search-cancel" href="#back">Hủy bỏ</a>
+                    </div>
+
+                    <div class="view-body scroll" data-scroll-type="pull">
+                        <div class="content"></div>
+                        <span class="top"></span>
+                        <span class="bottom"></span>
+                    </div>
+
+                    <div class="indicator spinner active center">Loading...</div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="js/vendor/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="js/vendor/fingerprint.min.js"></script>
+        <script type="text/javascript" src="js/vendor/iscroll-min.js"></script>
+        <script type="text/javascript" src="js/vendor/klass.min.js"></script>
+        <script type="text/javascript" src="js/vendor/code.photoswipe.jquery-3.0.5.min.js"></script>
+
+        <script type="text/javascript" src="phonegap.js"></script>
+         <!--<script type="text/javascript" src="js/plugins/SMSBuilder.js"></script>-->
+
+        <script type="text/javascript" src="js/config.js"></script>
+        <script type="text/javascript" src="js/engine.js"></script>
+        <script type="text/javascript" src="js/plugins.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+
+        <script type="text/javascript">
+            var _gaq=[['_setAccount', CONFIG.GoogleAnalyticsId || false],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src='//www.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>
